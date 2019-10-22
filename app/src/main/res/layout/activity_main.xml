@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/rb_dewasa"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#86FF00" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/g_horor"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#86FF00" />
+
+        <EditText
+            android:id="@+id/ed_direct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_title"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Directed by" />
+
+        <EditText
+            android:id="@+id/ed_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Titlte" />
+
+        <EditText
+            android:id="@+id/ed_prodct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_direct"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Titlte" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aplikasi Movie"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/ed_prodct"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#88FF00" />
+
+        <CheckBox
+            android:id="@+id/g_Thriler"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:shadowColor="#3C3F41"
+            android:text="Thriler"
+            android:textColorHint="#000000"
+            android:textColorLink="#FDFBFD" />
+
+        <CheckBox
+            android:id="@+id/g_romance"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@id/g_Thriler"
+            android:text="Romance" />
+
+        <CheckBox
+            android:id="@+id/g_comedy"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/g_Thriler"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Comedy" />
+
+        <CheckBox
+            android:id="@+id/g_action"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/g_romance"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@id/g_Thriler"
+            android:text="Action" />
+
+        <CheckBox
+            android:id="@+id/g_horor"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/g_comedy"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Horror" />
+
+        <CheckBox
+            android:id="@+id/g_fantasy"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/g_action"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@id/g_horor"
+            android:text="Fantasy" />
+
+        <RadioButton
+            android:id="@+id/rb_anak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView4"
+            android:layout_margin="5dp"
+            android:text="Under 13th" />
+
+        <RadioButton
+            android:id="@+id/rb_remaja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb_anak"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="13th until 18th" />
+        <RadioButton
+            android:id="@+id/rb_dewasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb_remaja"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Above 18th" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView6"
+            android:layout_margin="5dp"
+            android:entries="@array/spinner_negara"
+            android:spinnerMode="dialog" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Date Release" />
+
+        <Button
+            android:id="@+id/process"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Process" />
+    </RelativeLayout>
+</ScrollView>

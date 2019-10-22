@@ -1,0 +1,11 @@
+<resources>
+    <string-array name="spinner_negara">
+        <item>Indonesia</item>
+        <item>Japan</item>
+        <item>English</item>
+        <item>USA</item>
+        <item>China</item>
+        <item>Rusia</item>
+        <item>Australia</item>
+    </string-array>
+</resources>
